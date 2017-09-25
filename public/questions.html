@@ -1,0 +1,15 @@
+<div class="logo" ng-if='showLogo'>
+  <img src="Logos_ByTailorBrands/logo_transparent_background.png" height='300px' width='450px'>
+</div>
+<div class="content" ng-if='!showLogo'>
+  <div class="row">
+    <div class="col-sm-6 pic"></div>
+    <div class="col-sm-6">
+      <div class="text-center quest" style="width:400px; margin:30% auto;">
+        <h1>{{randomizer.question}}</h1>
+        <button ng-click="save(randomizer.category)" type="button" class="btn btn-outline-danger">Yes</button>
+        <button ng-click="pick()" class="btn btn-outline-danger">No</button>
+      </div>
+    </div>
+  </div>
+</div>

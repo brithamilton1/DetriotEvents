@@ -1,0 +1,14 @@
+<div class="row">
+
+<div class="col-md-6"><img id="map-image" ng-if="event" ng-src="https://maps.googleapis.com/maps/api/staticmap?center={{event.latitude}},{{event.longitude}}&zoom=16&size=600x600&maptype=roadmap&markers=color:blue%7Clabel:%7C{{event.latitude}},{{event.longitude}}&key=AIzaSyC1Xmstrq2HGnF3--Kn3eWb6ys1RyWeqfM"></img></div>
+
+<div class="col-md-6">
+<div class='category'>
+<a href="{{event.url}}"><h1>{{event.title}}</h1></a>
+<h2>{{event.venue_name}}</h2>
+<h2>{{event.venue_address}}</h2>
+<h2>{{event.city_name}},{{event.region_name}}</h2>
+<p>{{event.description}}</p>
+</div>
+</div>
+</div>

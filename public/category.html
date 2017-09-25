@@ -1,0 +1,19 @@
+ <div class="row">
+        <div class="col-sm-6 pic"  style="background-image: url({{imageUrls[category]}})"></div>
+        <div class="col-sm-6">
+        <div class="category" style="width:400px; margin: 10% auto;">
+            <div ng-if="!Answers">LOADING...</div>
+                <h1 ng-if="Answers">{{category}}</h1>
+                    <ul>
+                    <li ng-repeat="answer in Answers | limitTo: 5">
+                        <a class="title" ng-click="saveEvent(answer)">{{answer.title}}</a>
+                        <ul><li>Location: {{answer.venue_name}}</li></ul>
+                    </li>
+                    <li ng-hide="hide" ng-repeat="answer in Answers | limitTo: -5">
+                        <a class="title" ng-click="saveEvent(answer)">{{answer.title}}</a>
+                        <ul><li>Location: {{answer.venue_name}}</li></ul>
+                </li>
+                </ul>
+                <button ng-if="Answers" ng-click="hidingShowing()" type="button" class="btn btn-outline-danger text-center">Show More/Less</button>
+            </div>
+        </div>

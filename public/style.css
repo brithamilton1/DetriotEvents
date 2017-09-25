@@ -1,0 +1,62 @@
+div{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+
+.nav {
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+}
+
+.pic{
+    background-image: url('https://img0.etsystatic.com/030/0/6387441/il_fullxfull.596579130_3fqy.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 100vh;
+}
+
+.logo {
+	text-align: center;
+    padding-top: 140px;
+    position: absolute;
+    width: 100%;
+}
+
+.logo.ng-leave {
+    transition: all ease-out 1s;
+    opacity: 1;
+}
+
+.logo.ng-leave.ng-leave-active {
+    opacity: 0;
+
+}
+
+.content.ng-enter {
+  transition:opacity ease 1s;
+  opacity: 0;
+}
+
+.content.ng-enter.ng-enter-active{
+    opacity: 1;
+}
+
+li {
+    list-style-type: none;
+}
+
+a.title:link {text-decoration: none;}
+a.title:hover {background:#F34A4A;}
+a.title:active {color:#ff0000;}
+
+.category{
+    width:400px; 
+    margin:30% auto;
+}
+
+.quest {
+    border-top: 2px solid #F34A4A ;
+    border-bottom: 2px solid #F34A4A ;
+    padding: 80px;
+}
