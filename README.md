@@ -1,1 +1,1 @@
-# DetriotEvents
+# DetroitEvents
